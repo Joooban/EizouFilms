@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EIZOU FILMS | Videography & Photography — Davao City</title>
+<meta name="description" content="Eizou Films is a creative agency in Davao City specializing in videography, photography, graphic design, and brand storytelling. Your story, our film.">
+<meta name="keywords" content="videography Davao, photography Davao, brand film, creative agency Philippines, Eizou Films">
+<meta name="author" content="Eizou Films">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="EIZOU FILMS | Your Story, Our Film">
+<meta property="og:description" content="Cinematic storytelling for brands in Davao City and beyond. Videography, photography, graphic design.">
+<meta property="og:image" content="https://drive.google.com/thumbnail?id=16GAPRqgAnTJlRw_8AMNF_Dw-tIEvYmt0&sz=w1200">
+<meta property="og:url" content="https://eizoufilms.com">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EIZOU FILMS | Your Story, Our Film">
+<meta name="twitter:description" content="Cinematic storytelling for brands in Davao City and beyond.">
+<meta name="twitter:image" content="https://drive.google.com/thumbnail?id=16GAPRqgAnTJlRw_8AMNF_Dw-tIEvYmt0&sz=w1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loader" id="loader"><div class="loader-logo">EIZOU FILMS</div><div class="loader-bar"><span></span></div></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">EIZOU FILMS</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="menu-btn" id="menuBtn" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileMenu">
+  <a href="#hero" onclick="closeMenu()">Home</a>
+  <a href="#work" onclick="closeMenu()">Work</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#story" onclick="closeMenu()">Our Story</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<section class="hero" id="hero">
+  <p class="hero-eyebrow">Creative Agency &middot; Davao City</p>
+  <h1>YOUR STORY,<span class="line2">OUR FILM.</span></h1>
+  <p class="hero-sub">We translate feeling into image. Every frame is shaped with intention&mdash;more than content, it's meaning made visible.</p>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<div class="kinetic-strip"><div class="kinetic-track">
+  <span>VIDEOGRAPHY</span><span class="accent">&bull;</span><span>PHOTOGRAPHY</span><span class="accent">&bull;</span><span>GRAPHIC DESIGN</span><span class="accent">&bull;</span><span>BRAND STORYTELLING</span><span class="accent">&bull;</span><span>YOUR STORY OUR FILM</span><span class="accent">&bull;</span><span>DAVAO CITY</span><span class="accent">&bull;</span>
+  <span>VIDEOGRAPHY</span><span class="accent">&bull;</span><span>PHOTOGRAPHY</span><span class="accent">&bull;</span><span>GRAPHIC DESIGN</span><span class="accent">&bull;</span><span>BRAND STORYTELLING</span><span class="accent">&bull;</span><span>YOUR STORY OUR FILM</span><span class="accent">&bull;</span><span>DAVAO CITY</span><span class="accent">&bull;</span>
+</div></div>
+
+<section class="philosophy reveal">
+  <p class="sec-label">Our Philosophy</p>
+  <h2>An Era of <em>Storytelling</em></h2>
+  <p>We believe brands need to stand out more than ever. Eizou Films shares the big and the small stories that make your brand unique.</p>
+  <div class="divider"></div>
+</section>
+
+<!-- ===== BENTO VIDEO GRID ===== -->
+<section class="bento-section" id="work">
+  <p class="sec-label reveal">Selected Work</p>
+  <h2 class="reveal">Stories We've Told</h2>
+  <div class="bento">
+
+    <!-- v1: Large Landscape -->
+    <div class="bento-card v1 reveal" data-vid="16GAPRqgAnTJlRw_8AMNF_Dw-tIEvYmt0" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=16GAPRqgAnTJlRw_8AMNF_Dw-tIEvYmt0&sz=w1200" alt="The Unheard Specialty Coffee">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>THE UNHEARD SPECIALTY COFFEE</h3><span class="tag">Documentary &middot; Brand Film</span></div>
+    </div>
+
+    <!-- v2: Tall Portrait -->
+    <div class="bento-card v2 reveal" data-vid="1X0pjEfQdBo_oCQzdjG_lTYxkYV_F0d2_" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1X0pjEfQdBo_oCQzdjG_lTYxkYV_F0d2_&sz=w600" alt="Apokon Real Estate">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>APOKON REAL ESTATE</h3><span class="tag">Real Estate &middot; Commercial</span></div>
+    </div>
+
+    <!-- v3: Standard -->
+    <div class="bento-card v3 reveal" data-vid="1Vt5Sy86OUG0jm_hyZ8h4B81FG-cgpbPt" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1Vt5Sy86OUG0jm_hyZ8h4B81FG-cgpbPt&sz=w800" alt="CARX">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>CARX</h3><span class="tag">Automotive &middot; Cinematic Reel</span></div>
+    </div>
+
+    <!-- v4: Standard -->
+    <div class="bento-card v4 reveal" data-vid="1vqxp7l0FGwcGKjQfD8uGw_rZeBaJbXa2" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1vqxp7l0FGwcGKjQfD8uGw_rZeBaJbXa2&sz=w800" alt="Ani Phil Reel">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>ANI PHIL REEL</h3><span class="tag">Event &middot; Showreel</span></div>
+    </div>
+
+    <!-- v5: Portrait -->
+    <div class="bento-card v5 reveal" data-vid="1Y3010mDYZxEds8TRycIMNujLmpsbHK9Y" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1Y3010mDYZxEds8TRycIMNujLmpsbHK9Y&sz=w600" alt="Kadayawan Expo">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>KADAYAWAN EXPO</h3><span class="tag">Event &middot; Festival Coverage</span></div>
+    </div>
+
+    <!-- v6: Landscape — SWAPPED: now Jaguar Documentary -->
+    <div class="bento-card v6 reveal" data-vid="1qBsagpV8Ok9aKOKi5kOy9d--MZJVYbGN" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1qBsagpV8Ok9aKOKi5kOy9d--MZJVYbGN&sz=w1000" alt="Jaguar Documentary">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>JAGUAR DOCUMENTARY</h3><span class="tag">Documentary &middot; Feature</span></div>
+    </div>
+
+    <!-- v7: Portrait -->
+    <div class="bento-card v7 reveal" data-vid="1SvZC5q60kgygTibYMjKYD0_IzlrLIEVE" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1SvZC5q60kgygTibYMjKYD0_IzlrLIEVE&sz=w600" alt="We Are Here">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>WE ARE HERE</h3><span class="tag">Brand &middot; Identity</span></div>
+    </div>
+
+    <!-- v8: Portrait -->
+    <div class="bento-card v8 reveal" data-vid="1CVrc7gP6VKC_MoLTQ7FBjdGvHgmSSRa7" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1CVrc7gP6VKC_MoLTQ7FBjdGvHgmSSRa7&sz=w600" alt="YOH Location">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>YOH LOCATION</h3><span class="tag">Lifestyle &middot; Brand Content</span></div>
+    </div>
+
+    <!-- v9: Portrait -->
+    <div class="bento-card v9 reveal" data-vid="1_hhcGtaMDy_57W23DAQAMBNnpRkk7a6i" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1_hhcGtaMDy_57W23DAQAMBNnpRkk7a6i&sz=w600" alt="La Fortuna Real Estate">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>LA FORTUNA REAL ESTATE</h3><span class="tag">Real Estate &middot; Property</span></div>
+    </div>
+
+    <!-- v10: Large Landscape — SWAPPED: now Slickstop -->
+    <div class="bento-card v10 reveal" data-vid="1b3BANCYEA-swj-yrevVfnF3cRXd70G6N" onclick="embedVideo(this)">
+      <img loading="lazy" class="poster" src="https://drive.google.com/thumbnail?id=1b3BANCYEA-swj-yrevVfnF3cRXd70G6N&sz=w1000" alt="SLICKSTOP">
+      <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="overlay"><h3>SLICKSTOP</h3><span class="tag">Product &middot; Commercial</span></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="kinetic-strip-2"><div class="kinetic-track-2">
+  <span>YOUR STORY</span><span class="filled">OUR FILM</span><span>YOUR STORY</span><span class="filled">OUR FILM</span><span>YOUR STORY</span><span class="filled">OUR FILM</span><span>YOUR STORY</span><span class="filled">OUR FILM</span><span>YOUR STORY</span><span class="filled">OUR FILM</span><span>YOUR STORY</span><span class="filled">OUR FILM</span>
+</div></div>
+
+<section class="story-section" id="story">
+  <div class="story-grid">
+    <div class="story-text reveal">
+      <p class="sec-label">Our Story</p>
+      <h2>YOUR STORY,<br><span class="accent">OUR FILM.</span></h2>
+      <p>Eizo means "image" in Japanese&mdash;but to us, it's the imprint of a story, not just what's seen.</p>
+      <p>At Eizou Films, every frame is shaped with intention. More than content, it's meaning made visible.</p>
+      <blockquote>"Great stories don't happen by accident. We align bold ideas with clear purpose&mdash;so every frame moves the story forward."</blockquote>
+    </div>
+    <div class="story-visual reveal">
+      <div class="kanji-card">
+        <div class="kanji">映像</div>
+        <p class="kanji-label">EIZO / JAPANESE</p>
+        <p class="kanji-meaning">"Image&mdash;the imprint of a story, not just what's seen."</p>
+        <div class="badge">EST. DAVAO CITY</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services"><div class="services-inner">
+  <p class="sec-label reveal">What We Do</p>
+  <h2 class="reveal">GOT A VISION? WE'LL MAKE IT REAL.</h2>
+  <div class="srv-grid">
+    <div class="srv reveal"><p class="srv-num">01</p><h3>VIDEOGRAPHY</h3><p class="sub">Moments in Motion</p><p>Cinematic storytelling that captures the heartbeat of your brand.</p></div>
+    <div class="srv reveal"><p class="srv-num">02</p><h3>PHOTOGRAPHY</h3><p class="sub">Frozen Time. Frame Emotion.</p><p>We freeze fleeting moments into timeless images.</p></div>
+    <div class="srv reveal"><p class="srv-num">03</p><h3>GRAPHICS</h3><p class="sub">Visual Language That Speaks</p><p>Bold design that communicates at a glance.</p></div>
+    <div class="srv reveal"><p class="srv-num">04</p><h3>MODEL</h3><p class="sub">The Face of Your Story</p><p>We connect brands with the right talent.</p></div>
+  </div>
+</div></section>
+
+<div class="kinetic-strip"><div class="kinetic-track" style="animation-direction:reverse">
+  <span>WE CAPTURE</span><span class="accent">&bull;</span><span>WE DESIGN</span><span class="accent">&bull;</span><span>WE EXPRESS</span><span class="accent">&bull;</span><span>WE CREATE</span><span class="accent">&bull;</span><span>YOUR STORY OUR FILM</span><span class="accent">&bull;</span>
+  <span>WE CAPTURE</span><span class="accent">&bull;</span><span>WE DESIGN</span><span class="accent">&bull;</span><span>WE EXPRESS</span><span class="accent">&bull;</span><span>WE CREATE</span><span class="accent">&bull;</span><span>YOUR STORY OUR FILM</span><span class="accent">&bull;</span>
+</div></div>
+
+<section class="values"><div class="values-inner">
+  <p class="sec-label reveal">What Drives Us</p>
+  <h2 class="reveal">BUILT ON PURPOSE, POWERED BY FLOW</h2>
+  <div class="val-grid">
+    <div class="val reveal"><p class="val-num">01</p><h3>BUILDS TRUST</h3><p>We show up, stay sharp, and deliver with care.</p></div>
+    <div class="val reveal"><p class="val-num">02</p><h3>INNOVATES</h3><p>Our lens is always shifting forward.</p></div>
+    <div class="val reveal"><p class="val-num">03</p><h3>BUILDS ON PURPOSE</h3><p>Great stories don't happen by accident.</p></div>
+    <div class="val reveal"><p class="val-num">04</p><h3>WORKS WITH FLOW</h3><p>We bring structure, not rigidity.</p></div>
+  </div>
+</div></section>
+
+<section class="ig-section">
+  <p class="sec-label reveal">@eizou.films</p>
+  <h2 class="reveal">FOLLOW THE JOURNEY</h2>
+  <div class="ig-grid">
+    <a class="ig-item reveal" href="https://www.instagram.com/p/DKKLMbwyS_T/" target="_blank"><img loading="lazy" src="https://lh3.googleusercontent.com/d/1-z-h6Cfj4zk-oa0PG47qg1xF8JcgigtR=w600" alt="Post 1"><div class="ig-overlay"><span>View</span></div></a>
+    <a class="ig-item reveal" href="https://www.instagram.com/p/DKgdgTHS_Aj/" target="_blank"><img loading="lazy" src="https://lh3.googleusercontent.com/d/1kPRl0SQICr89JuCYUXC1rEi0Gewzgmc4=w600" alt="Post 2"><div class="ig-overlay"><span>View</span></div></a>
+    <a class="ig-item reveal" href="https://www.instagram.com/p/DGLZwX0yg05/" target="_blank"><img loading="lazy" src="https://lh3.googleusercontent.com/d/16hHZJIABjL7rvsMZLp7qfbQfUQoQGmd0=w600" alt="Post 3"><div class="ig-overlay"><span>View</span></div></a>
+    <a class="ig-item reveal" href="https://www.instagram.com/p/DYV90a_j2DV/" target="_blank"><img loading="lazy" src="https://lh3.googleusercontent.com/d/1g_mG8dEJiWd1ZYfN_jDi5Swr56OIs8G1=w600" alt="Post 4"><div class="ig-overlay"><span>View</span></div></a>
+    <a class="ig-item reveal" href="https://www.instagram.com/p/DUDI7BaEluv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img loading="lazy" src="https://lh3.googleusercontent.com/d/13e3fsMYQ10vQajzhj7QsErbq_Thp_iM3=w600" alt="Post 5"><div class="ig-overlay"><span>View</span></div></a>
+  </div>
+</section>
+
+<section class="contact" id="contact"><div class="contact-inner">
+  <p class="sec-label reveal">Let's Talk</p>
+  <h2 class="reveal">READY TO <span class="accent">CREATE</span><br>TOGETHER?</h2>
+  <p class="sub reveal">Tell us what you're envisioning&mdash;we'll help you shape it.</p>
+  <div class="crm-form-wrapper reveal">
+<iframe
+    src="https://api.leadconnectorhq.com/widget/form/FAM3mcyIzngE196zulKl"
+    style="width:100%;height:100%;border:none;border-radius:0px"
+    id="inline-FAM3mcyIzngE196zulKl" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Website Contact Card"
+    data-height="undefined"
+    data-layout-iframe-id="inline-FAM3mcyIzngE196zulKl"
+    data-form-id="FAM3mcyIzngE196zulKl"
+    title="Website Contact Card">
+</iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  </div>
+  <div class="c-info reveal">
+    <div class="c-info-item"><p class="label">Phone</p><p class="val">+63-949-101-2825</p></div>
+    <div class="c-info-item"><p class="label">Email</p><p class="val">eizoufilms@gmail.com</p></div>
+    <div class="c-info-item"><p class="label">Location</p><p class="val">Davao City, Philippines</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <p class="copy">&copy; 2026 EIZOU FILMS &mdash; All Rights Reserved.</p>
+  <div class="socials">
+    <a href="https://www.facebook.com/Eizou.films" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/eizou.films" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://twitter.com/Eizoufilms" target="_blank" rel="noopener">X</a>
+    <a href="https://www.youtube.com/@eizoufilms" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
