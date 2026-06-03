@@ -50,12 +50,34 @@ function closeMenu() {
   document.body.style.overflow = '';
 }
 
-// Video lightbox
-function embedVideo(card) {
-  const vid = card.dataset.vid;
-  if (!vid) return;
+// Autoplay muted when card enters viewport, pause when it leaves
+const videoObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    const vid = e.target.querySelector('video.poster');
+    if (!vid) return;
+    if (e.isIntersecting) vid.play().catch(() => {});
+    else { vid.pause(); vid.currentTime = 0; }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.bento-card').forEach(card => videoObs.observe(card));
 
-  // Create overlay
+// Unmute on hover, remute on leave
+document.querySelectorAll('.bento-card').forEach(card => {
+  const vid = card.querySelector('video.poster');
+  if (!vid) return;
+  card.addEventListener('mouseenter', () => { vid.muted = false; });
+  card.addEventListener('mouseleave', () => { vid.muted = true; });
+});
+
+// Video lightbox — native player
+function embedVideo(card) {
+  const src = card.dataset.vid;
+  if (!src) return;
+
+  // Mute the card video when lightbox opens
+  const cardVid = card.querySelector('video.poster');
+  if (cardVid) cardVid.muted = true;
+
   const overlay = document.createElement('div');
   overlay.id = 'video-lightbox';
   overlay.innerHTML = `
@@ -63,27 +85,18 @@ function embedVideo(card) {
     <div class="lb-container">
       <button class="lb-close" aria-label="Close">&times;</button>
       <div class="lb-frame">
-        <iframe
-          src="https://drive.google.com/file/d/${vid}/preview"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
+        <video src="${src}" controls autoplay playsinline style="width:100%;height:100%;background:#000"></video>
       </div>
     </div>
   `;
   document.body.appendChild(overlay);
   document.body.style.overflow = 'hidden';
-
-  // Animate in
   requestAnimationFrame(() => overlay.classList.add('open'));
 
-  // Close handlers
   function closeLightbox() {
+    overlay.querySelector('video').pause();
     overlay.classList.remove('open');
-    setTimeout(() => {
-      overlay.remove();
-      document.body.style.overflow = '';
-    }, 300);
+    setTimeout(() => { overlay.remove(); document.body.style.overflow = ''; }, 300);
   }
 
   overlay.querySelector('.lb-close').addEventListener('click', closeLightbox);
